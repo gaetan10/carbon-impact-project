@@ -1,8 +1,7 @@
 import { calculatedEmissions } from "../util/CalculatedEmissions";
 
-export default function TotalEmissions({allFlights}){
+export default function TotalEmissions({totalEmissions}){
 
-    let totalEmissions = (((allFlights.map(flight =>  calculatedEmissions(flight.kilometers))).map(strings => Number(strings))).reduce((accumulator, currentValue) => accumulator + currentValue, 0)).toFixed(2)
     let emoticon = ""
 
     if(totalEmissions>2 && totalEmissions<4){
