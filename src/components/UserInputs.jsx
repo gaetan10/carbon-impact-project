@@ -42,7 +42,7 @@ export default function UserInputs({onFlightAdded}){
                     <input onChange={handleInput3Change} value={input3Value} type="number" required></input>
                 </div>
             </div>
-            <button onClick={() => onFlightAdded(input1Value, input2Value, input3Value)}>Add flight</button>
+            <button onClick={() => buttonClicked()}>Add flight</button>
             <div>
                 
             </div>
