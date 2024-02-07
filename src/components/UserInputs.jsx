@@ -17,6 +17,13 @@ export default function UserInputs({onFlightAdded}){
     function handleInput3Change(event) {
         setInput3Value(event.target.value);
     };
+
+    function buttonClicked(){
+        onFlightAdded(input1Value, input2Value, input3Value);
+        setInput1Value("");
+        setInput2Value("");
+        setInput3Value("");
+    }
   
     return (
         
